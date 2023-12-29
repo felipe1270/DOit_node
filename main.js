@@ -54,4 +54,4 @@ server.post('/HTMLtoPDF', upload.single('htmlFile'), async (req, res) => {
 
 const fs = require('fs');
 
-server.listen(3003)
+server.listen(process.env.PORT || 6969)
